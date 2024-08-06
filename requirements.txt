@@ -1,0 +1,11 @@
+importlib_resources==6.4.0
+libusb==1.0.27
+libusb-package==1.0.26.2
+packaging==24.1
+pkg-about==1.1.7
+pyasn1==0.6.0
+pyusb==1.2.1
+rsa==4.9
+Tcl==0.2
+tic==0.2.0
+ticlib==0.2.2
