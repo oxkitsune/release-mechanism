@@ -25,7 +25,7 @@ def main():
 def parse_args():
     parser = argparse.ArgumentParser(description="Open or close the release mechanism")
     parser.add_argument(
-        "command", type=Literal["open", "close"], help="Command to run", required=True
+        "command", type=Literal["open", "close"], help="Command to run"
     )
     parser.add_argument(
         "--serial",
