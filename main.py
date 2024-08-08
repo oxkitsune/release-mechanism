@@ -23,12 +23,12 @@ def main():
     else:
         print("Unknown command:", args.command)
 
+    controller.stop()
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Open or close the release mechanism")
-    parser.add_argument(
-        "command", type=str, help="Command to run"
-    )
+    parser.add_argument("command", type=str, help="Command to run")
     parser.add_argument(
         "--serial",
         type=str,
