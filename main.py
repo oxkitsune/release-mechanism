@@ -20,12 +20,14 @@ def main():
     elif args.command == "close":
         controller.move_with_speed(-30)
         time.sleep(2)
+    else:
+        print("Unknown command:", args.command)
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Open or close the release mechanism")
     parser.add_argument(
-        "command", type=Literal["open", "close"], help="Command to run"
+        "command", type=str, help="Command to run"
     )
     parser.add_argument(
         "--serial",
