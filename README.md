@@ -17,13 +17,24 @@ Install required dependencies:
 pip install -r requirements.txt
 ```
 
-### macOs
+### Linker path
 
-On macOs make sure you've installed `libusb`:
+libusb needs to be on the linker path, for pyusb to find it.
+
+#### macOS
 
 ```sh
 brew install libusb
+export DYLD_LIBRARY_PATH="/opt/homebrew/lib:$DYLD_LIBRARY_PATH"
 ```
+
+#### Linux
+
+On linux make sure libusb is available in your `LD_LIBRARY_PATH`
+
+#### Windows
+
+Make sure the `libusb.dll` file is in your path or in the python interpreter scripts folder.
 
 ## Usage
 
